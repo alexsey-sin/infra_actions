@@ -30,7 +30,7 @@ jobs:
                 # запустить написанные разработчиком тесты
         python manage.py test
 
-deploy:
+jobs:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
     steps:
