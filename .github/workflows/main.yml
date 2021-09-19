@@ -63,7 +63,7 @@ jobs:
 #          passphrase: ${{ secrets.PASSPHRASE }} # Если ваш ssh-ключ защищён фразой-паролем
           script: |
             # Выполняет pull образа с DockerHub
-            sudo docker pull alexsey-sin/infra_actions 
+            sudo docker pull alexseysin2021/infra_actions 
             #остановка всех контейнеров
             sudo docker stop $(sudo docker ps -a -q)
-            sudo docker run --rm -d -p 5000:5000 alexsey-sin/infra_actions 
+            sudo docker run --rm -d -p 5000:5000 alexseysin2021/infra_actions 
